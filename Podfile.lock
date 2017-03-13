@@ -1,0 +1,24 @@
+PODS:
+  - Bugly (2.4.6)
+  - HandyJSON (1.5.2)
+  - IQKeyboardManagerSwift (4.0.8)
+  - SVProgressHUD (2.1.2)
+  - UMengAnalytics (4.1.10)
+
+DEPENDENCIES:
+  - Bugly
+  - HandyJSON (~> 1.5.2)
+  - IQKeyboardManagerSwift
+  - SVProgressHUD (~> 2.1.2)
+  - UMengAnalytics (~> 4.1.10)
+
+SPEC CHECKSUMS:
+  Bugly: 7756e72c59387b0d490f46e83ab458ae94ee7fba
+  HandyJSON: bb5597b375370dbe4312a27e696341b1f65e4fd7
+  IQKeyboardManagerSwift: c04bc9f68473823f825eb44d958fce98d921bead
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  UMengAnalytics: 40585031b7eb085534c68a951b394731e7166257
+
+PODFILE CHECKSUM: 4c1050270caa3993cc562f72ebc8aebb31d7ada1
+
+COCOAPODS: 1.2.0
