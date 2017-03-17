@@ -1,0 +1,5 @@
+language: objective-c
+osx_image: xcode8
+xcode_workspace: KeepExpress.xcworkspace
+xcode_scheme: KeepExpress
+script: set -o pipefail && xcodebuild test -workspace KeepExpress.xcworkspace -scheme KeepExpress|xcpretty
