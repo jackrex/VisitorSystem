@@ -1,2 +1,3 @@
 github "ReactiveX/RxSwift" ~> 3.0
 github "SwiftyJSON/SwiftyJSON"
+github "alibaba/HandyJSON" ~> 1.6.1

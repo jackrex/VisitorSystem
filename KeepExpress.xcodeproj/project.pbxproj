@@ -11,6 +11,7 @@
 		D8AFD1A11E2CB9C7000D0E54 /* Success.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AFD1A01E2CB9C7000D0E54 /* Success.swift */; };
 		D8B1E5B41E2732470072D765 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1E5B31E2732470072D765 /* Employee.swift */; };
 		D8B1E5C71E27696A0072D765 /* ExpressTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1E5C61E27696A0072D765 /* ExpressTextField.swift */; };
+		D8BFAD0C1E8CEC2B0087F6E8 /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8BFAD0B1E8CEC2B0087F6E8 /* HandyJSON.framework */; };
 		D8D3BFE81E4F438400CB2BFE /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D3BFE71E4F438400CB2BFE /* QRScannerViewController.swift */; };
 		D8D5DC971E262FCC002BD60B /* HttpApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D5DC961E262FCB002BD60B /* HttpApi.swift */; };
 		D8D5DCB51E266871002BD60B /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D5DCB41E266871002BD60B /* Info.m */; };
@@ -131,6 +132,7 @@
 		D8AFD1A01E2CB9C7000D0E54 /* Success.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Success.swift; sourceTree = "<group>"; };
 		D8B1E5B31E2732470072D765 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		D8B1E5C61E27696A0072D765 /* ExpressTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressTextField.swift; sourceTree = "<group>"; };
+		D8BFAD0B1E8CEC2B0087F6E8 /* HandyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HandyJSON.framework; sourceTree = "<group>"; };
 		D8D3BFE71E4F438400CB2BFE /* QRScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
 		D8D5DC961E262FCB002BD60B /* HttpApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpApi.swift; sourceTree = "<group>"; };
 		D8D5DCB21E266870002BD60B /* KeepExpress-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeepExpress-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			files = (
 				D8DC10541E126711001F5647 /* RxCocoa.framework in Frameworks */,
 				D8DC10531E126711001F5647 /* RxBlocking.framework in Frameworks */,
+				D8BFAD0C1E8CEC2B0087F6E8 /* HandyJSON.framework in Frameworks */,
 				D8D5DCBE1E266CEF002BD60B /* SwiftyJSON.framework in Frameworks */,
 				D8DC10551E126711001F5647 /* RxSwift.framework in Frameworks */,
 				D8DC10711E127531001F5647 /* Alamofire.framework in Frameworks */,
@@ -250,6 +253,7 @@
 		D8DC10011E123C7C001F5647 /* KeepExpress */ = {
 			isa = PBXGroup;
 			children = (
+				D8BFAD0B1E8CEC2B0087F6E8 /* HandyJSON.framework */,
 				D8D5DCBD1E266CEF002BD60B /* SwiftyJSON.framework */,
 				D8DC104F1E126711001F5647 /* RxBlocking.framework */,
 				D8DC10501E126711001F5647 /* RxCocoa.framework */,
@@ -570,6 +574,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/HandyJSON.framework",
 			);
 			outputPaths = (
 			);
