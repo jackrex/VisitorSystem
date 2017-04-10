@@ -1,0 +1,72 @@
+{
+  "commitish" : "3.3.1",
+  "iOS" : [
+    {
+      "name" : "RxBlocking",
+      "md5" : "856615f1b94b5a37da1393785f495493"
+    },
+    {
+      "name" : "RxTest",
+      "md5" : "84c43018c03e7399693b4a02758fd232"
+    },
+    {
+      "name" : "RxCocoa",
+      "md5" : "8c103fc72a8843a091b6f52b74dac338"
+    },
+    {
+      "name" : "RxSwift",
+      "md5" : "b826b541a44ba6c95a186d3cae436de0"
+    }
+  ],
+  "xcodeVersion" : "Xcode 8.3\nBuild version 8E162",
+  "watchOS" : [
+    {
+      "name" : "RxBlocking",
+      "md5" : "838cfb1196fb859746674bf1f87b7181"
+    },
+    {
+      "name" : "RxCocoa",
+      "md5" : "742ddb00691bb6609c89b82ffded31a6"
+    },
+    {
+      "name" : "RxSwift",
+      "md5" : "4f7aa245bdbf85dc2ee47092eeb7d5b3"
+    }
+  ],
+  "tvOS" : [
+    {
+      "name" : "RxBlocking",
+      "md5" : "63a61ea07f46a0e85a91dffe584cde45"
+    },
+    {
+      "name" : "RxCocoa",
+      "md5" : "88a1effc6ca5cab2a84258cf142d75b6"
+    },
+    {
+      "name" : "RxTest",
+      "md5" : "bd1fa1c9b538372a91c94796ebc4ee4a"
+    },
+    {
+      "name" : "RxSwift",
+      "md5" : "e55bb60abd94914f1ac5c30e1c8904b0"
+    }
+  ],
+  "Mac" : [
+    {
+      "name" : "RxBlocking",
+      "md5" : "1f00f0952a625499022079b8cbf7ca7e"
+    },
+    {
+      "name" : "RxCocoa",
+      "md5" : "29f5c8cfe77d25de5691875198bdbc1e"
+    },
+    {
+      "name" : "RxSwift",
+      "md5" : "18d6f452a08b517864a4a3be679b75be"
+    },
+    {
+      "name" : "RxTest",
+      "md5" : "ae81df955977c2eaed461570389fc032"
+    }
+  ]
+}

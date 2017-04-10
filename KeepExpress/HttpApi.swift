@@ -11,7 +11,7 @@ import Alamofire
 
 class HttpApi: NSObject {
 
-    static let host = "http://10.2.3.203:9998"
+    static let host = "http://10.2.3.202:9998"
     
     static func fullPath(path : String) -> String {
         return host + path

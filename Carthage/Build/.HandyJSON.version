@@ -1,0 +1,28 @@
+{
+  "commitish" : "1.6.1",
+  "iOS" : [
+    {
+      "name" : "HandyJSON",
+      "md5" : "e9b609ea15b40bac108a480cbb7db620"
+    }
+  ],
+  "xcodeVersion" : "Xcode 8.3\nBuild version 8E162",
+  "watchOS" : [
+    {
+      "name" : "HandyJSON",
+      "md5" : "b0b64b7b7b6b8b6e3d8763f696866306"
+    }
+  ],
+  "tvOS" : [
+    {
+      "name" : "HandyJSON",
+      "md5" : "9eec8ca44a3d487cd1f14a687c9e9385"
+    }
+  ],
+  "Mac" : [
+    {
+      "name" : "HandyJSON",
+      "md5" : "dd9978cf3edba13ce7c5031dc0c92e61"
+    }
+  ]
+}

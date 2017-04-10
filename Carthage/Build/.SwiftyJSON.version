@@ -1,0 +1,28 @@
+{
+  "commitish" : "3.1.4",
+  "iOS" : [
+    {
+      "name" : "SwiftyJSON",
+      "md5" : "ec8706082cf5ae427083cf684df8af34"
+    }
+  ],
+  "xcodeVersion" : "Xcode 8.3\nBuild version 8E162",
+  "watchOS" : [
+    {
+      "name" : "SwiftyJSON",
+      "md5" : "265992988c8fa35880a38f07699e3c10"
+    }
+  ],
+  "tvOS" : [
+    {
+      "name" : "SwiftyJSON",
+      "md5" : "3fe2a586b7780a00c821ccf0c1f0e817"
+    }
+  ],
+  "Mac" : [
+    {
+      "name" : "SwiftyJSON",
+      "md5" : "23062b7af4a1f147135136b2e6f2f402"
+    }
+  ]
+}
