@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B0C4CAC1EFF86F300D65621 /* ToModelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0C4CAB1EFF86F300D65621 /* ToModelExtension.swift */; };
 		8203771CA66DA60932303845 /* Pods_KeepExpress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18025CF66CC3549B9C7BD959 /* Pods_KeepExpress.framework */; };
 		D8AFD1A11E2CB9C7000D0E54 /* Success.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AFD1A01E2CB9C7000D0E54 /* Success.swift */; };
 		D8B1E5B41E2732470072D765 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1E5B31E2732470072D765 /* Employee.swift */; };
@@ -14,7 +15,6 @@
 		D8D3BFE81E4F438400CB2BFE /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D3BFE71E4F438400CB2BFE /* QRScannerViewController.swift */; };
 		D8D5DC971E262FCC002BD60B /* HttpApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D5DC961E262FCB002BD60B /* HttpApi.swift */; };
 		D8D5DCB51E266871002BD60B /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D5DCB41E266871002BD60B /* Info.m */; };
-		D8D5DCBE1E266CEF002BD60B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D5DCBD1E266CEF002BD60B /* SwiftyJSON.framework */; };
 		D8D6A2431E14AD21000A8CF4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6A2421E14AD21000A8CF4 /* MainView.swift */; };
 		D8D6A24D1E14B824000A8CF4 /* VistorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6A24C1E14B824000A8CF4 /* VistorViewController.swift */; };
 		D8D6A2561E14C614000A8CF4 /* ExpressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6A2551E14C614000A8CF4 /* ExpressView.swift */; };
@@ -28,8 +28,6 @@
 		D8DC10181E123C7D001F5647 /* KeepExpressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DC10171E123C7D001F5647 /* KeepExpressTests.swift */; };
 		D8DC10231E123C7D001F5647 /* KeepExpressUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DC10221E123C7D001F5647 /* KeepExpressUITests.swift */; };
 		D8DC10531E126711001F5647 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DC104F1E126711001F5647 /* RxBlocking.framework */; };
-		D8DC10541E126711001F5647 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DC10501E126711001F5647 /* RxCocoa.framework */; };
-		D8DC10551E126711001F5647 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DC10511E126711001F5647 /* RxSwift.framework */; };
 		D8DC10711E127531001F5647 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DC10641E127526001F5647 /* Alamofire.framework */; };
 		D8DC10721E127531001F5647 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8DC10641E127526001F5647 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8DC10771E127807001F5647 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DC10761E127807001F5647 /* BaseViewController.swift */; };
@@ -128,6 +126,7 @@
 		09F7EC4CF74093C2B104ECB1 /* Pods-KeepExpress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepExpress.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeepExpress/Pods-KeepExpress.debug.xcconfig"; sourceTree = "<group>"; };
 		18025CF66CC3549B9C7BD959 /* Pods_KeepExpress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeepExpress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3219A52D4B900E2739D96F57 /* Pods-KeepExpress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepExpress.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeepExpress/Pods-KeepExpress.release.xcconfig"; sourceTree = "<group>"; };
+		5B0C4CAB1EFF86F300D65621 /* ToModelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToModelExtension.swift; sourceTree = "<group>"; };
 		D8AFD1A01E2CB9C7000D0E54 /* Success.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Success.swift; sourceTree = "<group>"; };
 		D8B1E5B31E2732470072D765 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		D8B1E5C61E27696A0072D765 /* ExpressTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressTextField.swift; sourceTree = "<group>"; };
@@ -136,7 +135,6 @@
 		D8D5DCB21E266870002BD60B /* KeepExpress-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeepExpress-Bridging-Header.h"; sourceTree = "<group>"; };
 		D8D5DCB31E266871002BD60B /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
 		D8D5DCB41E266871002BD60B /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
-		D8D5DCBD1E266CEF002BD60B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = "<group>"; };
 		D8D6A2421E14AD21000A8CF4 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D8D6A24C1E14B824000A8CF4 /* VistorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistorViewController.swift; sourceTree = "<group>"; };
 		D8D6A2551E14C614000A8CF4 /* ExpressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressView.swift; sourceTree = "<group>"; };
@@ -156,8 +154,6 @@
 		D8DC10221E123C7D001F5647 /* KeepExpressUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepExpressUITests.swift; sourceTree = "<group>"; };
 		D8DC10241E123C7D001F5647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8DC104F1E126711001F5647 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxBlocking.framework; sourceTree = "<group>"; };
-		D8DC10501E126711001F5647 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = "<group>"; };
-		D8DC10511E126711001F5647 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
 		D8DC10581E127526001F5647 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		D8DC10761E127807001F5647 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D8DC10781E127849001F5647 /* ExpressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressViewController.swift; sourceTree = "<group>"; };
@@ -169,10 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8DC10541E126711001F5647 /* RxCocoa.framework in Frameworks */,
 				D8DC10531E126711001F5647 /* RxBlocking.framework in Frameworks */,
-				D8D5DCBE1E266CEF002BD60B /* SwiftyJSON.framework in Frameworks */,
-				D8DC10551E126711001F5647 /* RxSwift.framework in Frameworks */,
 				D8DC10711E127531001F5647 /* Alamofire.framework in Frameworks */,
 				8203771CA66DA60932303845 /* Pods_KeepExpress.framework in Frameworks */,
 			);
@@ -250,10 +243,7 @@
 		D8DC10011E123C7C001F5647 /* KeepExpress */ = {
 			isa = PBXGroup;
 			children = (
-				D8D5DCBD1E266CEF002BD60B /* SwiftyJSON.framework */,
 				D8DC104F1E126711001F5647 /* RxBlocking.framework */,
-				D8DC10501E126711001F5647 /* RxCocoa.framework */,
-				D8DC10511E126711001F5647 /* RxSwift.framework */,
 				D8DC10041E123C7C001F5647 /* MainViewController.swift */,
 				D8D6A24C1E14B824000A8CF4 /* VistorViewController.swift */,
 				D8D6A2591E14E3D5000A8CF4 /* ExpressCollectionViewCell.swift */,
@@ -308,6 +298,7 @@
 				D8FF6C461E1520AC00F12C7E /* Utils.swift */,
 				D8D5DC961E262FCB002BD60B /* HttpApi.swift */,
 				D8DC10021E123C7C001F5647 /* KAppDelegate.swift */,
+				5B0C4CAB1EFF86F300D65621 /* ToModelExtension.swift */,
 				D8DC10061E123C7C001F5647 /* Main.storyboard */,
 				D8DC10091E123C7C001F5647 /* Assets.xcassets */,
 				D8DC100B1E123C7C001F5647 /* LaunchScreen.storyboard */,
@@ -586,6 +577,7 @@
 			files = (
 				D8DC10051E123C7C001F5647 /* MainViewController.swift in Sources */,
 				D8D5DC971E262FCC002BD60B /* HttpApi.swift in Sources */,
+				5B0C4CAC1EFF86F300D65621 /* ToModelExtension.swift in Sources */,
 				D8B1E5C71E27696A0072D765 /* ExpressTextField.swift in Sources */,
 				D8D6A25A1E14E3D5000A8CF4 /* ExpressCollectionViewCell.swift in Sources */,
 				D8D3BFE81E4F438400CB2BFE /* QRScannerViewController.swift in Sources */,

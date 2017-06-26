@@ -7,12 +7,16 @@
 //
 
 import UIKit
-import Alamofire
 import SVProgressHUD
-import HandyJSON
+import Moya
+import RxSwift
+import RxCocoa
 
 class VistorViewController: UIViewController {
 
+    private let provider = RxMoyaProvider<HttpApi>()
+    private let dispose = DisposeBag()
+    
     var vistorView: VisitorView!;
     
     override func viewDidLoad() {
@@ -50,23 +54,20 @@ class VistorViewController: UIViewController {
         print("log is" + keepStaffName! + keepVisitorPhone! + vistorFrom! + visitorName!)
         
         let params = ["staffName": keepStaffName!, "staffPhone":vistorView.staffPhone, "visitorPhone": keepVisitorPhone!, "from": vistorFrom!, "visitorName": visitorName!]
-        
-        Alamofire.request(HttpApi.fullPath(path: "/visitor"), method: .post, parameters: params).responseString(completionHandler: { (response) in
-            
-            if let obj = JSONDeserializer<Success>.deserializeFrom(json: response.result.value)
-            {
-                if obj.ok == true {
-                    SVProgressHUD.showSuccess(withStatus: obj.msg)
+        provider
+            .request(.vistorWithParam(params))
+            .mapModel(Success.self)
+            .subscribe(onNext: {
+                if $0.ok == true {
+                    SVProgressHUD.showSuccess(withStatus: $0.msg)
                     self.dismiss(animated: true, completion: nil)
                 }else {
-                    SVProgressHUD.showError(withStatus: obj.msg)
+                    SVProgressHUD.showError(withStatus: $0.msg)
                 }
-  
-            }else {
+            }, onError:{ error in
                 SVProgressHUD.showError(withStatus: "发送失败")
-            }
-            
-        })
+            })
+            .addDisposableTo(dispose)
         
     }
     
