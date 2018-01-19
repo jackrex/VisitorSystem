@@ -7,8 +7,9 @@
 //
 
 import UIKit
-import Alamofire
-import HandyJSON
+import Moya
+import RxSwift
+import RxCocoa
 
 class VisitorView: UIView, UITextFieldDelegate {
 
@@ -18,6 +19,9 @@ class VisitorView: UIView, UITextFieldDelegate {
     @IBOutlet weak var vistorNameTextField: UITextField!
     @IBOutlet weak var vistorFromTextField: UITextField!
     public var staffPhone: String = ""
+    
+    private let provider = RxMoyaProvider<HttpApi>()
+    private let dispose = DisposeBag()
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -41,14 +45,13 @@ class VisitorView: UIView, UITextFieldDelegate {
         }
         
         if textField == keepStaffNameTextField {
-            let requestUrl = "/employee/query"
-            let params = ["name" : textField.text!]
-            Alamofire.request(HttpApi.fullPath(path: requestUrl), method: .get, parameters: params).responseString(completionHandler: { (response) in
-                if let employees = JSONDeserializer<Employee>.deserializeModelArrayFrom (json: response.result.value ) {
-                    self.updateUI(employees as! Array<Employee>)
-                }
-            })
-        
+            provider
+                .request(.getEmployeeWithName(textField.text!))
+                .mapArray(Employee.self)
+                .subscribe(onNext: {
+                    self.updateUI($0)
+                })
+                .addDisposableTo(dispose)
         }
     }
 

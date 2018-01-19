@@ -7,13 +7,17 @@
 //
 
 import UIKit
-import Alamofire
-import HandyJSON
 import SVProgressHUD
 import CoreGraphics
+import Moya
+import RxSwift
+import RxCocoa
 
 class ExpressViewController: BaseViewController, QRCodeDataDelegate {
-
+    
+    private let provider = RxMoyaProvider<HttpApi>()
+    private let dispose = DisposeBag()
+    
     var expressView: ExpressView!
     @IBOutlet weak var scanBtn: UIButton!
     
@@ -41,7 +45,7 @@ class ExpressViewController: BaseViewController, QRCodeDataDelegate {
         let rect = dict?[UIKeyboardFrameEndUserInfoKey] as! CGRect
         let ty = rect.origin.y - UIScreen.main.bounds.size.height
         let duration = dict?[UIKeyboardAnimationDurationUserInfoKey] as! Double
-        UIView.animate(withDuration: duration) { 
+        UIView.animate(withDuration: duration) {
             self.view.transform = CGAffineTransform(translationX: 0, y: ty)
             
         }
@@ -52,7 +56,7 @@ class ExpressViewController: BaseViewController, QRCodeDataDelegate {
         let keepStaffName = expressView.expressNameTextField.text
         let keepStaffPhone = expressView.expressPhoneTextField.text
         let expressCode = expressView.expressCodeTextField.text
-
+        
         if (keepStaffPhone?.characters.count)! <= 0 {
             SVProgressHUD.showError(withStatus: "员工手机号不能为空")
             return
@@ -60,35 +64,31 @@ class ExpressViewController: BaseViewController, QRCodeDataDelegate {
         
         let params = ["staffName": keepStaffName!, "staffPhone": keepStaffPhone!, "type": String(expressView.currentIndex), "expressCode": expressCode!]
         
-        Alamofire.request(HttpApi.fullPath(path: "/save/express"), method: .post, parameters: params).responseString(completionHandler: { (response) in
-            
-            if let obj = JSONDeserializer<Success>.deserializeFrom(json: response.result.value)
-            {
-                if obj.ok == true {
-                    SVProgressHUD.showSuccess(withStatus: obj.msg)
+        provider
+            .request(.sendMessageWithParam(params))
+            .mapModel(Success.self)
+            .subscribe(onNext: {
+                if $0.ok == true {
+                    SVProgressHUD.showSuccess(withStatus: $0.msg)
                     self.dismiss(animated: true, completion: nil)
                 }else {
-                    SVProgressHUD.showError(withStatus: obj.msg)
+                    SVProgressHUD.showError(withStatus: $0.msg)
                 }
-                
-            }else {
+            }, onError:{ error in
                 SVProgressHUD.showError(withStatus: "发送失败")
-            }
-
-            
-        })
-        
+            })
+            .addDisposableTo(dispose)
     }
     
     
     @IBAction func cancelAction(_ sender: Any) {
-         self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
-
+    
     @IBAction func scanAction(_ sender: Any) {
         let scanVC: QRScannerViewController = self.storyboard!.instantiateViewController(withIdentifier: "QRScannerViewController") as! QRScannerViewController
         scanVC.delegate = self
-        self.present(scanVC, animated: true) { 
+        self.present(scanVC, animated: true) {
             
         }
     }
