@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class KAppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +16,7 @@ class KAppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         application.statusBarStyle = UIStatusBarStyle.lightContent
         UITextField.appearance().tintColor = UIColor.white
-        IQKeyboardManager.sharedManager().enable = true
+        IQKeyboardManager.shared.enable = true
         Bugly.start(withAppId: "b6eed5380b")
         
         let analyConfig = UMAnalyticsConfig.init()

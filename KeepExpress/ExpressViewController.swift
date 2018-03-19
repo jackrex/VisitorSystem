@@ -36,18 +36,7 @@ class ExpressViewController: BaseViewController, QRCodeDataDelegate {
     }
     
     
-    func keyboardWillShow(userInfo: NSNotification) -> Void {
-        let dict = userInfo.userInfo
-        let rect = dict?[UIKeyboardFrameEndUserInfoKey] as! CGRect
-        let ty = rect.origin.y - UIScreen.main.bounds.size.height
-        let duration = dict?[UIKeyboardAnimationDurationUserInfoKey] as! Double
-        UIView.animate(withDuration: duration) { 
-            self.view.transform = CGAffineTransform(translationX: 0, y: ty)
-            
-        }
-        
-    }
-    
+   
     @IBAction func submitData(_ sender: Any) {
         let keepStaffName = expressView.expressNameTextField.text
         let keepStaffPhone = expressView.expressPhoneTextField.text
