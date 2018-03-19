@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep Visitor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApH-YW-uDh">
-                                <rect key="frame" x="332" y="512" width="360" height="86"/>
+                                <rect key="frame" x="332" y="370" width="360" height="86"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="72"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -30,7 +30,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.3427744002" green="0.31946037379999997" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ApH-YW-uDh" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="492" id="ixv-Dk-Dsh"/>
+                            <constraint firstItem="ApH-YW-uDh" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="350" id="ixv-Dk-Dsh"/>
                             <constraint firstItem="ApH-YW-uDh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lVe-od-LK3"/>
                         </constraints>
                     </view>
